@@ -1,6 +1,6 @@
 h1. Numstyle plugin
 
-This EE1 plugin converts numbers into letters or roman numerals.
+This EE2 plugin converts numbers into letters or roman numerals.
 
 h3. Requirements
 
