@@ -34,14 +34,17 @@ class Numstyle {
 
 	// -----------------------------------------------------------------------
 
-	private function _alpha($ascii_offset)
+	/**
+	 * Upper Alpha
+	 */
+	function upper_alpha()
 	{
 		$num = $this->num - 1;
 		$alpha = '';
 
 		while ($num >= 0)
 		{
-			$ascii = ($num % 26) + $ascii_offset;
+			$ascii = ($num % 26) + 65;
 			$alpha = chr($ascii) . $alpha;
 
 			$num = intval($num / 26) - 1;
@@ -51,19 +54,11 @@ class Numstyle {
 	}
 
 	/**
-	 * Upper Alpha
-	 */
-	function upper_alpha()
-	{
-		return $this->_alpha(65);
-	}
-
-	/**
 	 * Lower Alpha
 	 */
 	function lower_alpha()
 	{
-		return $this->_alpha(97);
+		return strtolower($this->upper_alpha());
 	}
 
 	// -----------------------------------------------------------------------
