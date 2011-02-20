@@ -6,9 +6,9 @@ $plugin_info = array(
 	'pi_version'     => '1.0a',
 	'pi_author'      => 'Brandon Kelly',
 	'pi_author_url'  => 'http://brandon-kelly.com',
-	'pi_description' => 'Converts numbers to letters',
+	'pi_description' => 'Converts numbers to letters or roman numerals',
 	'pi_usage'       => '{exp:numstyle:lower_alpha num="1"} → a' . NL
-	                  . '{exp:numstyle:upper_alpha num="1"} → B' . NL
+	                  . '{exp:numstyle:upper_alpha num="2"} → B' . NL
 	                  . '{exp:numstyle:lower_roman num="3"} → iii' . NL
 	                  . '{exp:numstyle:upper_roman num="4"} → IV'
 );

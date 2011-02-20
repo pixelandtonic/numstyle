@@ -1,0 +1,22 @@
+h1. Numstyle plugin
+
+This EE1 plugin converts numbers into letters or roman numerals.
+
+h3. Requirements
+
+* "ExpressionEngine 2":http://expressionengine.com/index.php?affiliate=brandonkelly
+
+h3. Installation
+
+* Upload the numstyle folder to system/expressionengine/third_party/
+
+h3. Usage
+
+Use Numstyle in your templates like so:
+
+* @{exp:numstyle:lower_alpha num="1"}@ (becomes “a”)
+* @{exp:numstyle:upper_alpha num="1"}@ (becomes “B”)
+* @{exp:numstyle:lower_roman num="3"}@ (becomes “iii”)
+* @{exp:numstyle:upper_roman num="4"}@ (becomes “IV”)
+
+You can also pass a tag into the num= parameter, such as @{count}@ or @{row_count}@.
