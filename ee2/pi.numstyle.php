@@ -37,10 +37,12 @@ class Numstyle {
 		$num = $this->num - 1;
 		$alpha = '';
 
-		for ($alpha = ''; $num >= 0; $num = intval($num / 26) - 1)
+		while ($num >= 0)
 		{
 			$ascii = ($num % 26) + $ascii_offset;
 			$alpha = chr($ascii) . $alpha;
+
+			$num = intval($num / 26) - 1;
 		}
 
 		return $alpha;
