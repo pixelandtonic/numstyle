@@ -72,38 +72,38 @@ class Numstyle {
 		$roman = '';
 
 		$map = array(
-			array(1000000, 'M'),
-			array(900000, 'CM'),
-			array(500000, 'D'),
-			array(400000, 'CD'),
-			array(100000, 'C'),
-			array(90000, 'XC'),
-			array(50000, 'L'),
-			array(40000, 'XL'),
-			array(10000, 'X'),
-			array(9000, 'IX'),
-			array(5000, 'V'),
-			array(4000, 'IV'),
-			array(1000, 'M'),
-			array(900, 'CM'),
-			array(500, 'D'),
-			array(400, 'CD'),
-			array(100, 'C'),
-			array(90, 'XC'),
-			array(50, 'L'),
-			array(40, 'XL'),
-			array(10, 'X'),
-			array(9, 'IX'),
-			array(5, 'V'),
-			array(4, 'IV'),
-			array(1, 'I')
+			'M'  => 1000000,
+			'CM' => 900000,
+			'D'  => 500000,
+			'CD' => 400000,
+			'C'  => 100000,
+			'XC' => 90000,
+			'L'  => 50000,
+			'XL' => 40000,
+			'X'  => 10000,
+			'IX' => 9000,
+			'V'  => 5000,
+			'IV' => 4000,
+			'M'  => 1000,
+			'CM' => 900,
+			'D'  => 500,
+			'CD' => 400,
+			'C'  => 100,
+			'XC' => 90,
+			'L'  => 50,
+			'XL' => 40,
+			'X'  => 10,
+			'IX' => 9,
+			'V'  => 5,
+			'IV' => 4,
+			'I'  => 1
 		);
 
-		foreach ($map as $pair)
+		foreach ($map as $k => $v)
 		{
-			while ($num >= $pair[0]) {
-				$roman .= $pair[1];
-				$num -= $pair[0];
+			while ($num >= $v) {
+				$roman .= $k;
+				$num -= $v;
 			}
 		}
 
