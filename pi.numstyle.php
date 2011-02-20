@@ -3,7 +3,7 @@
 
 $plugin_info = array(
 	'pi_name'        => 'Numstyle',
-	'pi_version'     => '1.0a',
+	'pi_version'     => '1.0',
 	'pi_author'      => 'Brandon Kelly',
 	'pi_author_url'  => 'http://brandon-kelly.com',
 	'pi_description' => 'Converts numbers to letters or roman numerals',
