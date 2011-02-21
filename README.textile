@@ -15,7 +15,7 @@ h3. Usage
 Use Numstyle in your templates like so:
 
 * @{exp:numstyle:lower_alpha num="1"}@ (becomes “a”)
-* @{exp:numstyle:upper_alpha num="1"}@ (becomes “B”)
+* @{exp:numstyle:upper_alpha num="2"}@ (becomes “B”)
 * @{exp:numstyle:lower_roman num="3"}@ (becomes “iii”)
 * @{exp:numstyle:upper_roman num="4"}@ (becomes “IV”)
 
